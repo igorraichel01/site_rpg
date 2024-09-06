@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+    background-image: url('/refugio/imagens/back2.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alterado para flex-start */
+    color: #fff;
+    min-height: 100vh;
+
+}
+
+
+header{
+    margin: 0px;
+    width:100%;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: rgba(216, 27, 27, 0.021);
+    z-index: 99;
+    color:aliceblue;
+    box-shadow: 0 4px 8px rgba(150, 27, 27, 0.945);
+}
+.navigation{
+    margin:5px;
+    padding-bottom: 5px;
+  
+}
+
+
+header a{
+    font-family: 'Rajdhani', sans-serif;
+    margin: 5px;
+    margin-left: 60px;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+.btnLogin-popup{
+    font-family: 'Rajdhani', sans-serif;
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    margin-left:20px;
+    margin-bottom: 2px;
+   padding:2px;
+   cursor: pointer;
+   transition: background-color 0.3s ease, border-color 0.3s ease;
+   color: rgb(255, 255, 255);
+    border-radius:5px;
+    background-color: rgba(189, 36, 36, 0);
+    border-color: rgb(216, 27, 27);;
+    border: 2px solid rgb(216, 27, 27);;
+    
+   
+}
+
+.btnLogin-popup:hover{
+font-family: 'Rajdhani', sans-serif;
+background-color:  rgb(216, 27, 27);
+border-color:white;
+color:white;
+}
+
+.search-button{
+    font-family: 'Rajdhani', sans-serif;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    border-radius:5px;
+    background-color:rgba(114, 34, 34, 0.116);
+    color:white;
+    border-color: rgb(216, 27, 27);
+    border: 2px solid  rgb(216, 27, 27);
+
+}
+
+
+.search-button:hover {
+    background-color: rgb(216, 27, 27);
+    border-color:white;
+    color: rgba(255, 255, 255, 0.973);
+    }
+    #search-input{
+        border-radius: 5px;
+        font-family: 'Rajdhani', sans-serif;
+        border: 2px solid  rgb(216, 27, 27);;
+        background-color:rgba(110, 87, 87, 0.158);
+        margin-left: 30px;
+        color:white;
+    }
+    .container{
+        margin-top: 10px;
+        position:relative;
+        width: 800px;
+     
+        align-items: center;
+        }
+
+
+.container h1 {
+    font-family: 'Rajdhani', sans-serif;
+    margin-left: 20px;
+    text-align: left; /* Alinhado à esquerda */
+    color: #fff;
+  
+}
+
+.card-item h2 {
+    font-family: 'Rajdhani', sans-serif;
+    margin-left: 20px;
+    text-align: left; /* Alinhado à esquerda */
+    color: #faf6f6;
+  
+}
+
+
+p {
+    font-family: 'Rajdhani', sans-serif;
+    margin-left: 20px;
+    text-align: left; 
+    color: #fff;
+    font-size: 24px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    flex-wrap: wrap;
+    margin-top: 20px; 
+}
+
+.card-item {
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0); 
+    padding: 10px;
+    border-radius: 10px;
+    width: 250px;
+    height: 400px;
+    box-shadow: 0 4px 8px rgba(216, 27, 27, 0.945);
+    margin: 10px;
+}
+.card-link {
+    text-decoration: none;
+    color: #fcfbfb;
+    transition: color 0.3s;
+}
+
+.card-link:hover {
+    color: #e21c1c; 
+}
+
+
+.card-item img:hover {
+    transform: scale(1.1); 
+}
+
+.card-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card-item p {
+    margin-top: 5px;
+    font-size: 20px;
+    color: #fff;
+}
+.card-item h2:hover,
+.card-item p:hover {
+    color:  #e21c1c; ; 
+}
+.card-link:hover .card-item {
+    background-color: #f0f0f017; 
+    transform: scale(1.05); 
+}
+
+    .logo {
+        width: 80%;
+        height:10px;
+    }
+
+    
+    #btn-primary{
+        font-family: 'Rajdhani', sans-serif;
+    }
