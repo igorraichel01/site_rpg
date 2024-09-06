@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>refugio barbaro</title>
+    <link rel="stylesheet" href="../estilo/style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <style>
+    
+      .custom-btn {
+          font-family: 'Rajdhani', sans-serif; 
+          width: 220px;
+          color: #ffffff;
+          background-color:#811313;
+          border-color: #811313;
+          padding:5px;
+          margin-bottom:10px;
+          margin-top: 10px;
+      }
+
+      .custom-btn:hover {
+          background-color:white;
+          border-color: white;
+         
+      }
+     
+
+      .footer-credits p {
+            font-size: 12px;
+            margin-top: 40px; 
+        }
+       
+          .card {
+            background-color: #81131304;
+            border: 1px solid #86191900; 
+            border-radius: 8px; 
+            margin-bottom: 20px; 
+            box-shadow: 0 4px 8px rgba(216, 27, 27, 0);
+            display: grid; /* Usando grid layout */
+            grid-template-columns: auto 1fr;
+        }
+  
+        .card img {
+            width: 100%; 
+            height: auto; 
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px; 
+            padding-left: 20px;
+        }
+  
+        .card-content {
+            padding: 20px; 
+        }
+  
+        .card-content h2,
+        .card-content p {
+          font-family: 'Rajdhani', sans-serif; 
+            margin: 0;
+            color: #fff; 
+            font-size: 18px;
+            margin-top: 4px;
+         
+          text-justify: distribute-all-lines;
+        }
+        .card-content h1{
+          font-size: 20px;
+          margin-top: 8px;
+          margin-left: 0px;
+        }
+        .paragrafo-especial {
+          margin-bottom: 1em; 
+        }
+  </style>
+
+</head>
+<body>
+
+<header>
+<nav class="navigation">
+ 
+ <img src="../imagens/g5.png" alt="Logo" class="logo-image" >
+ 
+   <a href="#"><ion-icon name="home" class="large-icon" ></ion-icon></a>
+   <a href="#"></a>
+   <a href="#"></a>
+   <a href="#"></a>
+   <a href="#"></a>
+   <a href="../html/classes.html">Voltar</a>
+   
+   <input type="text" id="search-input" placeholder="Buscar...">
+  <button class="search-button" onclick="realizarBusca()">Buscar</button>
+  <button class="btnLogin-popup" onclick="redirecionar()">Login</button>
+
+
+</nav>
+</header>
+
+<div class="container">
+  <h1>“Bata primeiro, pergunte depois.”</h1>
+  <p>Essa é a frase que define a classe mais casca-grossa do D&D! 
+    Porém não confundir casca-grossa com o mais forte, mas indiscutivelmente 
+    um Bárbaro esbanja Força e vitalidade, e nesse guia de dicas vamos te ajudar a 
+    montar um Bárbaro que fará os inimigos tremer ao verem tamanha brutalidade.
+  </p>
+
+  <div class="card">
+    <img src="../imagens/barbarian.png" alt="Imagem do card">
+    <div class="card-content">
+        <h2>Desejo por combate</h2>
+        <p>Dentro de cada bárbaro existe um desejo insaciável por combate e caos. Normalmente bárbaros não ligam muito para o que acontece ao seu redor desde que eles tenham inimigos para dilapidar e álcool para beber.
+          Porém não se engane um bárbaro não é um destruidor desenfreado, em muitos casos um bárbaro é o maior protetor de sua tribo ou um zeloso guardião da vida 
+          </p>
+          <h1>CARACTERÍSTICAS DE CLASSE:</h1>
+           <h1>VIDA</h1>
+           <p>O bárbaro inicialmente começa com 1d12 de vida(+ seu Modificador de Constituição). Ganhando 1d12 a cada nível que o mesmo evolui. Se você não sabe muito sobre D&D ainda, saiba que é muita vida!
+          </p>
+           <h1>PROFICIÊNCIAS</h1>
+           <p class="paragrafo-especial">Armaduras: Armaduras leves, armaduras médias e escudos</p>
+           <p class="paragrafo-especial">Armas: Armas simples e armas marciais.</p>
+           <p class="paragrafo-especial">Ferramentas: Nenhuma</p>
+           <p class="paragrafo-especial">Testes de Resistência: Força e Constituição</p>
+           <p class="paragrafo-especial">Perícias: Você pode escolher 2 entre Adestrar animais, Intimidação,
+             Atletismo, Sobrevivência, Natureza e percepção.</p>
+    </div>
+</div>
+<h1>Fúria</h1>
+<p>A parte mais divertida de se jogar de Bárbaro, é obviamente sair dilacerando os 
+  oponentes que O Mestre joga em cima de você. Com a Fúria você pode fazer isso de 
+  forma muito mais eficiente , quando você ativa a fúria seu bárbaro tem uma ataque de 
+  raiva que garante  inicialmente + em rolagem de dano, você tem vantagem em Testes de 
+  resistência em Força e Constituição, e por fim seu bárbaro ganha resistência contra dano de: 
+  Concussão, cortante e perfurante. Bem impressionante né? MAS cuidado, no nível 1 o bárbaro só 
+  pode usar a fúria 2 vezes por dia, depois disso ele só poderá usar de novo após um descanso longo.
+</p>
+
+<h1>Defesa sem armadura</h1>
+<p>Usar uma armadura pesada, escudo e ser cuidadoso? 
+  Nah! Deixa isso para os Paladinos e Guerreiros. 
+  Você ri na cara do perigo e não teme sofrer ganhar 
+  alguns arranhões. A Defesa sem Armadura faz com que, 
+  quando estiver despido de qualquer armadura sua Classe de 
+  Armadura seja 10 +  seu Modificador de Destreza + Seu modificador de 
+  Constituição. O próprio homem de ferro.
+</p>
+
+<h1>ATAQUE DESCUIDADO</h1>
+<p>Com essa habilidade seu Bárbaro será insanamente descuidado, uma besta enjaulada 
+  sedenta por combate. A partir do Nível 2 você pode se desprover de qualquer 
+  preocupação e estourar seu inimigo na 
+  porrada de forma feroz. Quando você fizer seu primeiro ataque 
+  (no seu turno) você pode usar essa habilidade, ao fazer isso é lhe 
+  concedido uma vantagem nas jogadas de ataque com armas corpo a corpo 
+  usando sua Força. Porém as jogadas de ataque contra você possuem vantagem 
+  até o início do próximo turno.</p>
+<h1>SENTIDO DE PERIGO</h1>
+<p>Ainda no Nível 2 seu personagem adquire uma intuição sinistra quando 
+  algo ao seu redor está errado, você ganha vantagem em Testes de Destreza 
+  contra efeitos que você possa ver (como magias e armadilhas). Para ganhar 
+  essa vantagem seu personagem nao pode estar surdo, cego ou incapacitado.
+</p>
+
+<h1>CAMINHOS PRIMITIVOS</h1>
+<p>No Nível 3 você precisará escolher para seu bárbaro um caminho primitivo, 
+  o caminho primitivo define muito como o seu bárbaro e principalmente sua 
+  fúria evoluirá ao subir os níveis: 6, 10 e 14. Em breve farei um post sobre os 
+  caminhos primitivos com minhas dicas…
+</p>
+
+<h1>ATAQUE EXTRA</h1>
+<p>No nível 5 você ganha um ataque extra quando você realizar um ação de ataque 
+  no seu turno, simples, porém quando você é bárbaro ataques nunca são demais.</p>
+
+<h1>MOVIMENTO RÁPIDO</h1>
+<p>Continuando no nível 5 você ainda consegue aumentar seu deslocamento 
+  em 3 metros enquanto você não estiver vestindo alguma armadura pesada</p>
+
+<h1>INSTINTO SELVAGEM</h1>
+<p>Já no nível 7 seu Bárbaro adquire um  instinto tão apurado que ele recebe 
+  vantagem em jogadas de iniciativa. Mesmo surpreso no começo do 
+  combate seu bárbaro pode agir normalmente com tanto que entre em fúria antes de atacar.</p>
+
+<h1>CRÍTICO BRUTAL</h1>
+<p>Quando você chega ao nível 9 você pode rolar um dado de dano de arma para ser 
+  adicionado ao dano extra de seu ataque corpo-a-corpo quando você tirar um crítico. 
+  Essa habilidade aumenta para 2 dados no nível 13 e 3 dados adicionais no nível 17, 
+  como foi dito BRUTAL!
+</p>
+
+<h1>FÚRIA IMPLACÁVEL</h1>
+<p>Esse daqui é o motivo de muitos jogadores acharem bárbaro uma classe roubada 
+  ( E não estão tão erradas, futuramente farei um post explicando o porquê). 
+  Resumindo de forma simplória a partir do nível 11 SEU 
+  BÁRBARO NÃO PARA DE LUTAR, NÃO IMPORTA A GRAVIDADE DOS FERIMENTOSSSSSSS!
+  Mas calma que isso tem suas limitações: Se você cair a 0 pontos de vida e não morrer, 
+  você deve realizar um teste de salvaguarda de Constituição CD 10. Se passar você recebe 1 ponto de vida. 
+  Porém cuidado toda vez que você usar isso a dificuldade do teste aumenta em 5 CD. A dificuldade volta ao 
+  CD 10 depois de um descanso curto ou um descanso longo.
+</p>
+
+<h1>FÚRIA PERSISTENTE </h1>
+<p>Entrando no nível 15 seu bárbaro é tão furioso que a fúria dele só 
+  acaba de ele cair inconsciente ou se ele mesmo decidir terminá-la.
+</p>
+
+<h1>FORÇA INDOMÁVEL</h1>
+<p>Está prestes a matar um dragão e sua rolagem de força foi muito baixa? 
+  Se você é um bárbaro de nível 18 isso é besteira! Porque no nível 18 toda 
+  rolagem de força que você tirar, se ela for menor que seu valor de força, você 
+  simplesmente pode substitui-la pelo seu valor de força. OOOOOOOOOOO POTÊNCIA!!!!!!!!!!
+</p>
+
+<h1>CAMPEÃO PRIMITIVO</h1>
+<p class="paragrafo-especial">Após ser abençoado por muitos níveis com uma força arrebatadora chegou a hora de sua última recompensa no nível 20. No último nível você ganha mais 4 pontos em Força e Constituição e seu limite para essas características se tornam 24.</p>
+
+<p class="paragrafo-especial">Assim acaba o guia do Bárbaro, uma classe bem simples, intuitiva e, obviamente muito divertida de se jogar. Caro leitor, tente criar uma forma criativa de interpretar seu Bárbaro sem ficar muito no clichê do mesmo ser uma montanha de músculos burra. Faça ele heroico ou apenas bruto, um bárbaro sabido também é sempre muito bem vindo.</p>
+
+
+<h1>Exemplo de Personagem</h1>
+
+<div class="card">
+  <img src="../imagens/exemploBarb.png" alt="Imagem do card">
+  <div class="card-content">
+      <h2>Bárbaros</h2>
+    
+      <p>O feroz bárbaro delphos, com sua arma de dois gumes e fúria inigualável,</p>
+      <p>  deixa um rastro de destruição por onde passa.</p>
+        
+      
+  </div>
+</div>
+
+  
+<p class="paragrafo-especial">Obrigado a todos que leram meu guia.Essa é minha primeira vez escrevendo alguma coisa para um blog e estou muito satisfeito com o que eu produzi. Até a próxima.</p>
+  
+
+
+</div>
+
+
+<footer class="mt-5 footer-credits">
+  <div class="container text-center">
+  
+      <p>&copy; Desenvolvido Por: Igor Raichel & Davi B.Raichel - Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+</body>
+</html>

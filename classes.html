@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>refugio classes</title>
+    <link rel="stylesheet" href="../estilo/style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&family=Ubuntu&display=swap" rel="stylesheet">
+
+<style>
+h1{
+  margin-top: 8px;
+  padding-top: 10px;
+  font-family: 'Rajdhani', sans-serif;
+    margin-left: 20px;
+    text-align: left;
+    color: #fff;
+}
+
+
+.card {
+           
+            cursor: pointer;
+            background-color: #81131344;
+            border: 1px solid #86191962; 
+            border-radius: 8px; 
+            margin-bottom: 20px; 
+            box-shadow: 0 4px 8px rgba(216, 27, 27, 0.418);
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-title {
+          font-family: 'Rajdhani', sans-serif;
+            text-align: left;
+            color: white; 
+            font-size: 1.5rem; 
+            margin-bottom: 5px; 
+        }
+
+        .card-text {
+            color: white; 
+            text-align:left;
+            font-size: 18px;
+        }
+
+        .footer-credits{
+          height: 20px;
+        }
+        .footer-credits p {
+            font-size: 12px;
+            margin-top: 40px; 
+        }
+        .card img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .card:hover img {
+            opacity: 0;
+        }
+
+</style>
+
+</head>
+<body>
+
+<header>
+<nav class="navigation">
+ 
+ <img src="../imagens/g5.png" alt="Logo" class="logo-image" >
+ 
+   <a href="../php/rpg.php">Home<ion-icon name="home" class="large-icon" ></ion-icon></a>
+   <a href=" ../html/classes.html">Classes</a>
+   <a href="../html/exemplos.html">HEROIS</a>
+   <a href="adm_mod.php">BATAT</a>
+   <a href="contato.html">TICTAC</a>
+   <a href="../html/fichas.html">Fichas</a>
+   
+   <input type="text" id="search-input" placeholder="Buscar...">
+  <button class="search-button" onclick="realizarBusca()">Buscar</button>
+  <button class="btnLogin-popup" onclick="redirecionar()">Login</button>
+
+
+</nav>
+</header>
+
+
+<h1>Classes de Personagens em D&D</h1>
+<div class="container mt-4">
+  <div class="row">
+      <div class="col-md-4">
+          <div class="card" onclick="location.href='../html/barbaro.html';">
+            <img src="../imagens/barbaro.jpg" alt=" imagem Bárbaros">
+              <div class="card-body">
+                  <h5 class="card-title">Bárbaros</h5>
+                  <p class="card-text">
+                    Um lutador feroz e selvagem que canaliza sua raiva em combate.
+                     Bárbaros preferem o calor da batalha ao conforto da civilização, 
+                     bárbaros são conhecidos por sua força incrível, resistência sobrenatural. Com uma fúria incontrolável, os bárbaros canalizam sua raiva para desencadearataques brutais e resistir a ferimentos.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card" onclick="location.href='../html/druida.html';">
+            <img src="../imagens/druida.png" alt="imagem druida">
+              <div class="card-body">
+                  <h5 class="card-title">Druidas</h5>
+                  <p class="card-text"> O druida é um protetor da natureza, capaz de canalizar o 
+                    poder dos elementos e das criaturas selvagens. Eles são sábios e místicos, ligados 
+                    à terra e aos ciclos naturais da vida. Os druidas são capazes 
+                    de mudar de forma, convocar animais e controlar as forças da natureza em seu favor.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card" onclick="location.href='../html/monge.html';">
+            <img src="../imagens/monge.png" alt="imagem monge">
+              <div class="card-body">
+                  <h5 class="card-title">Monges</h5>
+                  <p class="card-text">É um mestre das artes marciais 
+                    e do autocontrole espiritual.Eles treinam seus corpos e mentes para alcançar um estado de perfeição
+                     física e espiritual,capazes de realizar feitos sobre-humanos de força, agilidade e resistência. Os monges são 
+                    dedicados à busca da iluminação e da harmonia interior.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card" onclick="location.href='../html/mago.html';">
+            <img src="../imagens/mago.png" alt="imagem mago">
+            <div class="card-body">
+                <h5 class="card-title">Magos</h5>
+                <p class="card-text"> O mago é um estudioso da magia arcana, que domina uma ampla variedade 
+                    de feitiços e encantamentos. Eles adquirem conhecimento através de estudo e prática, e são
+                     capazes de lançar magias poderosas que podem alterar a realidade. Os magos são 
+                      vistos como eruditos e acadêmicos, dedicados à 
+                    busca do conhecimento místico. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+      
+ <div class="card" onclick="location.href='../html/guerreiro.html';">
+    <img src="../imagens/guerreiro.png" alt="imagem guerreiro ">
+          <div class="card-body">
+              <h5 class="card-title">Guerreiros</h5>
+              <p class="card-text">O guerreiro é um mestre das armas e do combate corpo a corpo.
+                 Ele é habilidoso em uma variedade de armas e armaduras e é conhecido por sua força e resistência em batalha. Os guerreiros são frequentemente encontrados liderando a linha de frente em combate,
+                 protegendo seus aliados e enfrentando inimigos poderosos de frente.</p>
+          </div>
+      </div>
+  </div>
+   
+
+  <div class="col-md-4">
+ <div class="card" onclick="location.href='../html/ladinos.html';">
+    <img src="../imagens/ladinos.png" alt="imagem ladinos">
+        <div class="card-body">
+            <h5 class="card-title">Ladinos</h5>
+            <p class="card-text">Furtividade, trapaça e habilidade manual. 
+                Eles são mestres do subterfúgio e da astúcia, capazes de se mover pelas sombras e desarmar armadilhas com facilidade. Os ladinos são frequentemente associados ao crime e à criminalidade,
+                 mas também podem ser vistos como heróis renegados ou espiões habilidosos.
+              </p>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+ <div class="card" onclick="location.href='../html/clerigo.html';">
+    <img src="../imagens/clerigo.png" alt="imagem clerigo">
+      <div class="card-body">
+          <h5 class="card-title">Clérigo</h5>
+          <p class="card-text">O clérigo é um servo divino, canalizando o poder de seus deuses para curar os
+             feridos, banir os mortos-vivos e proteger os fiéis. Eles são líderes espirituais e curadores, capazes de lançar
+             magias sagradas e invocar a bênção de seus deuses para ajudar seus aliados em batalha.</p>
+      </div>
+  </div>
+</div>
+<div class="col-md-4">
+ <div class="card" onclick="location.href='../html/inventor.html';">
+    <img src="../imagens/inventor.png" alt="imagem inventor ">
+      <div class="card-body">
+          <h5 class="card-title">Inventor</h5>
+          <p class="card-text">Cria e utiliza dispositivos para
+            alcançar seus objetivos. Eles são engenheiros habilidosos e inventores geniais, capazes de construir 
+            armas, armadilhas e artefatos mágicos para ajudá-los em suas aventuras. Os inventores são frequentemente 
+            vistos como gênios excêntricos e visionários, cujas invenções revolucionam o mundo ao seu redor.</p>
+      </div>
+  </div>
+ </div>
+ <div class="col-md-4">
+  <div class="card" onclick="location.href='../html/bardo.html';">
+    <img src="../imagens/bardo.png" alt="imagem bardo">
+        <div class="card-body">
+            <h5 class="card-title">Bardo</h5>
+            <p class="card-text">O bardo é um contador de histórias, músico e manipulador de magia.
+                 Eles são artistas versáteis, capazes de inspirar aliados, lançar feitiços 
+                 arcanos e manipular as emoções dos outros com sua música e poesia. 
+                 São conhecidos por sua habilidade de adaptação e improvisação, frequentemente vistos como a alma da festa.</p>
+        </div>
+    </div>
+   </div>
+   <div class="col-md-4">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Feiticeiro</h5>
+            <p class="card-text">É um usuário inato da magia, cujo poder é derivado de 
+                seu sangue ou linhagem. Eles possuem um talento natural para a magia, capazes de lançar 
+                feitiços poderosos sem a necessidade de estudo ou preparação. São frequentemente vistos como indivíduos misteriosos e enigmáticos, cujo poder
+                 vem de fontes ancestrais ou sobrenaturais.</p>
+        </div>
+    </div>
+   </div>
+   <div class="col-md-4">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Paladino</h5>
+            <p class="card-text">O paladino é um guerreiro santo, imbuido 
+                de poder divino para combater o mal. Eles são defensores da 
+                justiça e da virtude, dedicados a lutar contra a injustiça e proteger os 
+                inocentes. Os paladinos são conhecidos por sua devoção aos seus deuses e ideais,
+                 e possuem habilidades sagradas que lhes permitem curar os feridos e banir o mal.</p>
+        </div>
+    </div>
+   </div>
+   <div class="col-md-4">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Bruxo</h5>
+            <p class="card-text">O bruxo é um conjurador de magia arcana que faz pactos com 
+                entidades sobrenaturais em troca de poder. Eles lançam feitiços poderosos, invocam 
+                demônios e exploram segredos proibidos da magia. Os bruxos têm acesso a um conjunto 
+                único de habilidades e invocações, que lhes permitem manipular e controlar a magia de
+                 maneiras únicas.</p>
+        </div>
+    </div>
+   </div>
+   <div class="col-md-4">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Patrulheiro</h5>
+            <p class="card-text">O patrulheiro é um mestre da natureza e do rastreamento. 
+                Ele é hábil em sobrevivência, caça e exploração, e muitas vezes é especializado 
+                em combater criaturas selvagens e monstruosas. Os patrulheiros são frequentemente solitários, 
+                vagando pelas fronteiras selvagens e protegendo-as da ameaça de monstros e invasores.</p>
+        </div>
+    </div>
+   </div>
+ 
+</div>
+
+<footer class="mt-5 footer-credits">
+  <div class="container text-center">
+      <p>&copy; Desenvolvido Por: Igor Raichel & Davi B.Raichel - Todos os direitos reservados.</p>
+   </div>
+  </footer>
+</div>
+
+</body>
+</html>
